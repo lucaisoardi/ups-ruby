@@ -1,7 +1,7 @@
 module UPS
   module Version
     MAJOR = 0
-    MINOR = 22
+    MINOR = 23
     PATCH = 0
     BUILD = nil
 
