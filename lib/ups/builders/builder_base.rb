@@ -176,7 +176,7 @@ module UPS
       # @return [void]
       def add_rate_information
         shipment_root << Element.new('RateInformation').tap do |rate_info|
-          rate_info << element_with_value('NegotiatedRatesIndicator', '1')
+          rate_info << Element.new('NegotiatedRatesIndicator')
         end
       end
 
