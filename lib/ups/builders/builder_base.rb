@@ -73,11 +73,9 @@ module UPS
         root << Element.new('Request').tap do |request|
           request << element_with_value('RequestAction', action)
           request << element_with_value('RequestOption', option)
-          request << element_with_value('SubVersion', 2205)
 
-          unless sub_version.nil?
-            request << element_with_value('SubVersion', sub_version)
-          end
+          request << element_with_value('SubVersion', 2205)
+          
         end
       end
 
